@@ -1,0 +1,111 @@
+$secondary-color: #06c;
+
+.advertisement-ip-14 {
+    text-align: center;
+    padding: 11px;
+    font-size: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    font-size: 56px;
+
+    .header {
+        position: absolute;
+        padding-top: 61px;
+        width: 100%;
+
+        h2 {
+            font-size: 1em;
+        }
+
+        h3 {
+            font-size: 0.43em;
+        }
+
+        * {
+            text-align: center;
+        }
+    }
+}
+
+.links {
+    font-size: 0.37em;
+
+    .link {
+        color: #2997ff;
+    }
+}
+
+.link {
+    color: $secondary-color;
+    font-weight: 450;
+    
+}
+
+.iphone-14-pro {
+    background-image: url('../../assets/images/Pro/iphone14-2-tall.jpg');
+    height: 692px;
+}
+
+.iphone-14-standard {
+    background-image: url('../../assets/images/Standard/iphone14-tall.jpg');
+    height: 692px;
+}
+
+@media screen and (max-width: 1069px) {
+    .iphone-14-pro {
+        background-image: url('../../assets/images/Pro/iphone14-small.jpg');
+        height: 650px;
+    }
+    .iphone-14-standard {
+        background-image: url('../../assets/images/Standard/iphone14-small.jpg');
+        height: 600px;
+    }
+}
+
+@media screen and (max-width: 734px) {
+    .section {
+        font-size: 46px;
+
+        .header {
+            padding-top: 32px;
+        }
+    }
+
+    .iphone-14-pro {
+        background-image: url('../../assets/images/Pro/iphone14.jpg');
+        height: 500px;
+    }
+
+    .iphone-14-standard {
+        height: 500px;
+    }
+
+    .advertisement-ip-14 {
+        width: 380px;
+        padding: 10px 0px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .advertisement-ip-14 {
+        width: 100%;
+        font-size: 3.94vw;
+        padding: 10px 0px;
+    }
+
+    .section {
+        font-size: 12.10vw;
+    }
+
+    .iphone-14-standard {
+        height: 450px;
+    }
+}

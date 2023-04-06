@@ -1,0 +1,28 @@
+$navbar-font-color: rgba(2555, 255, 255, 0.8);
+$navbar-background-color: rgba(22, 22, 23, 0.8);
+$gap: 30px;
+
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: $navbar-background-color;
+    font-size: 0.7rem;
+    color: $navbar-font-color;
+    font-weight: 400;
+    z-index: 100;
+}
+
+.flex-container {
+    align-items: center;
+    justify-content: space-between;
+    gap: $gap;
+
+    i {
+        font-size: 18px;
+    }
+
+    .fa-apple {
+        font-size: 20px;
+        padding: 12px 0px;
+    }
+}
