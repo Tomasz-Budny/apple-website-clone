@@ -59,6 +59,11 @@ $secondary-color: #06c;
     height: 692px;
 }
 
+.watch-series-8 {
+    background-image: url('../../assets/images/Watch/watch-tall.jpg');
+    height: 692px;
+}
+
 @media screen and (max-width: 1069px) {
     .iphone-14-pro {
         background-image: url('../../assets/images/Pro/iphone14-small.jpg');
@@ -66,6 +71,11 @@ $secondary-color: #06c;
     }
     .iphone-14-standard {
         background-image: url('../../assets/images/Standard/iphone14-small.jpg');
+        height: 600px;
+    }
+
+    .watch-series-8 {
+        background-image: url('../../assets/images/Watch/watch-medium.jpg');
         height: 600px;
     }
 }
@@ -88,6 +98,11 @@ $secondary-color: #06c;
         height: 500px;
     }
 
+    .watch-series-8 {
+        background-image: url('../../assets/images/Watch/watch-small.jpg');
+        height: 500px;
+    }
+
     .advertisement-ip-14 {
         width: 380px;
         padding: 10px 0px;
@@ -107,5 +122,9 @@ $secondary-color: #06c;
 
     .iphone-14-standard {
         height: 450px;
+    }
+
+    .watch-series-8 {
+        height: 400px
     }
 }
