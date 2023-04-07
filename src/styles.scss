@@ -39,3 +39,10 @@ img {
 .dark {
     color: $dark-color;
 }
+
+.responsive-container {
+    box-sizing: border-box;
+    max-width: 1069px;
+    padding: 0 15px;
+    margin: 0 auto;
+}

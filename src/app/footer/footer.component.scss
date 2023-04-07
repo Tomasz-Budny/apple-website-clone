@@ -1,0 +1,15 @@
+.responsive-container {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #6f6f75;
+
+    p {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .responsive-container {
+        font-size: 3.15vw;
+    }
+}
