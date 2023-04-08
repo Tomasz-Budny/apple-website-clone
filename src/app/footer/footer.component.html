@@ -27,30 +27,57 @@
     <hr>
     <div class="masonry-container">
         <div class="nav-section">
-            <div class="title">Shop and Learn</div>
-            <div class="item">Store</div>
-            <div class="item">Mac</div>
-            <div class="item">iPad</div>
-            <div class="item">iPhone</div>
-            <div class="item">Watch</div>
-            <div class="item">AirPods</div>
-            <div class="item">TV & Home</div>
-            <div class="item">AirTag</div>
-            <div class="item">Accessories</div>
-            <div class="item">Gift Cards</div>
+            <div class="control">
+                <span class="title">Shop and Learn</span>
+                <i 
+                    class="fa-solid fa-plus btn-section"
+                    (click)="shop.classList.toggle('show')">
+                </i>
+            </div>
+            <div class="content" #shop>
+                <div class="item">Store</div>
+                <div class="item">Mac</div>
+                <div class="item">iPad</div>
+                <div class="item">iPhone</div>
+                <div class="item">Watch</div>
+                <div class="item">AirPods</div>
+                <div class="item">TV & Home</div>
+                <div class="item">AirTag</div>
+                <div class="item">Accessories</div>
+                <div class="item">Gift Cards</div>
+            </div>
+            <hr>
         </div>
         <div class="nav-section">
-            <div class="title">App Wallet</div>
-            <div class="item">Wallet</div>
-            <div class="item">Apple Card</div>
-            <div class="item">Apple Pay</div>
-            <div class="item">Apple Cash</div>
+            <div class="control">
+                <span class="title">App Wallet</span>
+                <i 
+                    class="fa-solid fa-plus btn-section"
+                    (click)="wallet.classList.toggle('show')">
+                </i>
+            </div>
+            <div class="content" #wallet>
+                <div class="item">Wallet</div>
+                <div class="item">Apple Card</div>
+                <div class="item">Apple Pay</div>
+                <div class="item">Apple Cash</div>
+            </div>
+            <hr>
         </div>
         <div class="nav-section">
-            <div class="title">Account</div>
-            <div class="item">Manage your Aplle ID</div>
-            <div class="item">Apple Store Account</div>
-            <div class="item">ICloud.com</div>
+            <div class="control">
+                <span class="title">Account</span>
+                <i 
+                    class="fa-solid fa-plus btn-section"
+                    (click)="account.classList.toggle('show')">
+                </i>
+            </div>
+            <div class="content" #account>
+                <div class="item">Manage your Aplle ID</div>
+                <div class="item">Apple Store Account</div>
+                <div class="item">ICloud.com</div>
+            </div>
+            <hr>
         </div>
         <div class="nav-section">
             <div class="title">Shop and Learn</div>
