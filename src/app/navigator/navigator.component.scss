@@ -6,23 +6,106 @@ nav {
     position: fixed;
     width: 100%;
     background-color: $navbar-background-color;
-    font-size: 0.7rem;
     color: $navbar-font-color;
     font-weight: 400;
     z-index: 100;
 }
 
 .flex-container {
+    font-size: 12px;
     align-items: center;
     justify-content: space-between;
     gap: $gap;
 
+    .nav-item {
+        font-size: 0.9em;
+    }
+
     i {
-        font-size: 18px;
+        font-size: 1.5em;
     }
 
     .fa-apple {
-        font-size: 20px;
+        font-size: 1.7em;
         padding: 12px 0px;
+    }
+
+    .hamburger {
+        display: none;
+        padding: 12px 0px;
+    }
+}
+
+.collapsed {
+    background-color: rgb(22, 22, 23);
+    height: 100vh;
+
+    .flex-container {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .fa-apple {
+        display: none;
+    }
+
+    .fa-magnifying-glass {
+        display: none;
+    }
+
+    .fa-bag-shopping {
+        display: none;
+    }
+
+    .hamburger {
+        order: 1;
+    }
+
+    .nav-item {
+        margin-left: 1.4em;
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+        font-size: 2.3em;
+        display: block !important;
+        width: 100%;
+    }
+
+    @for $i from 1 through 11 {
+        .nav-item:nth-child(#{$i}) {
+            order: $i + 1;
+        }
+    }
+}
+
+@media screen and (max-width: 822px) {
+    .flex-container {
+        justify-content: flex-end;
+
+        .fa-apple {
+            margin-right: auto;
+        }
+
+        .nav-item {
+            display: none;
+        }
+
+        .hamburger {
+            display: block !important;
+        }
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .flex-container {
+        font-size: 3.15vw;
+        gap: 7.89vw;
+
+        .fa-apple {
+            padding: 3.15vw 0px;
+        }
+
+        .hamburger {
+            padding: 3.15vw 0px;
+        }
     }
 }
