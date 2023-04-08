@@ -9,6 +9,6 @@ export class FooterComponent {
 
   onToggle(event: MouseEvent) {
     console.log(event.currentTarget);
-    (<HTMLDivElement>event.currentTarget).classList.toggle('show-2');
+    (<HTMLDivElement>event.currentTarget).classList.toggle('show');
   }
 }

@@ -18,7 +18,7 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    max-height: 380px;
+    max-height: 379px;
     margin-top: 10px;
 
     .nav-section {
@@ -58,6 +58,11 @@
     }
 }
 
+.footer-copyright {
+    padding: 21px 0px;
+    letter-spacing: 0.04em;
+}
+
 @media screen and (min-width: 735px) {
     .apple-store-section {
         margin-bottom: 100px !important;
@@ -91,10 +96,6 @@
 }
 
 .show {
-    display: block !important;
-}
-
-.show-2 {
     .btn-section {
         transition: 0.3s;
         transform: rotateZ(45deg);
