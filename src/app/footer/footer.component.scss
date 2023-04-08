@@ -58,6 +58,12 @@
     }
 }
 
+@media screen and (min-width: 735px) {
+    .apple-store-section {
+        margin-bottom: 100px !important;
+    }
+}
+
 @media screen and (max-width: 734px) {
     .masonry-container {
         max-height: none;
