@@ -129,13 +129,25 @@ $secondary-color: #06c;
 
     .section {
         font-size: 12.10vw;
+
+        .header {
+            padding-top: 8.42vw;
+        }
+
+        .ml-32 {
+            margin-left: 8.42vw;
+        }
+    }
+
+    .iphone-14-pro {
+        height: 131.57vw;
     }
 
     .iphone-14-standard {
-        height: 450px;
+        height: 118.42vw;
     }
 
     .watch-series-8 {
-        height: 400px
+        height: 105.26vw;
     }
 }
