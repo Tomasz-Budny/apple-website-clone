@@ -46,6 +46,11 @@
             padding-bottom: 0.25em;
         }
 
+        .item:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
         hr {
             color: #6f6f75;
             display: none;
@@ -63,6 +68,7 @@
                 width: 100%;
     
                 .btn-section {
+                    transition: 0.3s;
                     display: block !important;
                 }
             }
@@ -80,5 +86,16 @@
 
 .show {
     display: block !important;
+}
+
+.show-2 {
+    .btn-section {
+        transition: 0.3s;
+        transform: rotateZ(45deg);
+    }
+
+    .content {
+        display: block !important;
+    }
 }
 

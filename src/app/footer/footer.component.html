@@ -26,15 +26,12 @@
 
     <hr>
     <div class="masonry-container">
-        <div class="nav-section">
+        <div class="nav-section" (click)="onToggle($event)">
             <div class="control">
                 <span class="title">Shop and Learn</span>
-                <i 
-                    class="fa-solid fa-plus btn-section"
-                    (click)="shop.classList.toggle('show')">
-                </i>
+                <i class="fa-solid fa-plus btn-section"></i>
             </div>
-            <div class="content" #shop>
+            <div class="content">
                 <div class="item">Store</div>
                 <div class="item">Mac</div>
                 <div class="item">iPad</div>
@@ -48,15 +45,12 @@
             </div>
             <hr>
         </div>
-        <div class="nav-section">
+        <div class="nav-section" (click)="onToggle($event)">
             <div class="control">
                 <span class="title">App Wallet</span>
-                <i 
-                    class="fa-solid fa-plus btn-section"
-                    (click)="wallet.classList.toggle('show')">
-                </i>
+                <i class="fa-solid fa-plus btn-section"></i>
             </div>
-            <div class="content" #wallet>
+            <div class="content">
                 <div class="item">Wallet</div>
                 <div class="item">Apple Card</div>
                 <div class="item">Apple Pay</div>
@@ -64,15 +58,12 @@
             </div>
             <hr>
         </div>
-        <div class="nav-section">
+        <div class="nav-section" (click)="onToggle($event)">
             <div class="control">
                 <span class="title">Account</span>
-                <i 
-                    class="fa-solid fa-plus btn-section"
-                    (click)="account.classList.toggle('show')">
-                </i>
+                <i class="fa-solid fa-plus btn-section"></i>
             </div>
-            <div class="content" #account>
+            <div class="content">
                 <div class="item">Manage your Aplle ID</div>
                 <div class="item">Apple Store Account</div>
                 <div class="item">ICloud.com</div>
