@@ -40,7 +40,9 @@ nav {
         margin: 12px 0px;
     }
 
-    .hamburger:hover {
+    i:hover {
+        transition: 0.2s;
+        color:rgb(255, 255, 255);
         cursor: pointer;
     }
 }
@@ -110,7 +112,7 @@ nav {
         gap: 7.89vw;
 
         .fa-apple {
-            margin: 3.15vw 0px;
+            margin: 3.15vw auto 3.15vw 0px ;
         }
 
         .hamburger {
