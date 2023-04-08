@@ -9,7 +9,7 @@ export class FooterComponent {
 
   onToggle(event: MouseEvent) {
     if(window.innerWidth <= 734) {
-      (<HTMLDivElement>event.currentTarget).classList.toggle('show');
+      (<HTMLDivElement>event.currentTarget).parentElement.classList.toggle('show');
     }
   }
 }
