@@ -8,7 +8,8 @@ import { Component } from '@angular/core';
 export class FooterComponent {
 
   onToggle(event: MouseEvent) {
-    console.log(event.currentTarget);
-    (<HTMLDivElement>event.currentTarget).classList.toggle('show');
+    if(window.innerWidth <= 734) {
+      (<HTMLDivElement>event.currentTarget).classList.toggle('show');
+    }
   }
 }
